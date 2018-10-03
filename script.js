@@ -46,6 +46,14 @@ $(document).ready(function() {
 		$(this).removeClass("hover-black");
 		$("body").addClass("background-grey");
 	});
+	
+	$("a").replaceWith(function(){
+		return $("<button> Button </button>");
+	});
+	
+	$("button:first").click(function(){
+		$(this).hide(5000);
+	});
 
 
 }); 
