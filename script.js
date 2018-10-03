@@ -33,6 +33,19 @@ $(document).ready(function() {
 	$("h2").mouseleave(function(){
 		$("h2").removeClass("hover-blue");
 	});
+	
+	$("h2").mouseover(function(){
+		$(this).addClass("hover-big");
+	});
+	
+		$(".bottom_button").mouseover(function(){
+		$(this).addClass("hover-black");
+	});
+	
+	$(".bottom_button").mouseleave(function(){
+		$(this).removeClass("hover-black");
+		$("body").addClass("background-grey");
+	});
 
 
 }); 
