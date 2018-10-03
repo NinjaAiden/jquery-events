@@ -54,6 +54,10 @@ $(document).ready(function() {
 	$("button:first").click(function(){
 		$(this).hide(5000);
 	});
+	
+		$("button").click(function(){
+		$(this).siblings("p").slideToggle("slow");
+	});
 
 
 }); 
